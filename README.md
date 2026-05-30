@@ -6,6 +6,8 @@ This project uses a Convolutional Neural Network (CNN) to automatically classify
 
 The model was trained using the NEU-DET dataset and can classify six different defect categories.
 
+---
+
 ## Defect Classes
 
 - Crazing
@@ -15,11 +17,16 @@ The model was trained using the NEU-DET dataset and can classify six different d
 - Rolled-in Scale
 - Scratches
 
+---
+
 ## Dataset
 
-NEU-DET Steel Surface Defect Dataset
+**NEU-DET Steel Surface Defect Dataset**
 
-Total Images: 1440
+- Total Images: 1440
+- Number of Classes: 6
+
+---
 
 ## Methodology
 
@@ -34,6 +41,8 @@ Total Images: 1440
 7. Performance Evaluation
 8. Confusion Matrix Analysis
 
+---
+
 ## CNN Architecture
 
 - Conv2D (32 filters, 3×3)
@@ -42,11 +51,31 @@ Total Images: 1440
 - Dense (128 neurons)
 - Dense (6 neurons, Softmax)
 
+---
+
 ## Results
 
 - Test Accuracy: ~81%
 - Six-class defect classification
 - Successful prediction on unseen test images
+
+### Confusion Matrix
+
+![Confusion Matrix](Confusion%20Matrix.png)
+
+### Accuracy Curve
+
+![Accuracy Curve](Accuracy%20vs%20Epoch.png)
+
+### Loss Curve
+
+![Loss Curve](Loss%20Vs%20Epoch.png)
+
+### Sample Prediction
+
+![Sample Prediction](Sample%20Prediction.jpg)
+
+---
 
 ## Tools Used
 
@@ -57,6 +86,8 @@ Total Images: 1440
 - Scikit-learn
 - Google Colab
 
+---
+
 ## Future Improvements
 
 - Data Augmentation
@@ -64,8 +95,10 @@ Total Images: 1440
 - Transfer Learning
 - Real-time Industrial Deployment
 
+---
+
 ## Author
 
-Gokul
-M.Tech Production Engineering
+**Gokul P V**  
+M.Tech Production Engineering  
 IIT Delhi
